@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="staff.css">
+    <script>
+        (function(){
+        
+            const idleDurationSecs = 15;
+            const redirectUrl = 'staff5.html';
+            let idleTimeout; 
+        
+            const resetIdleTimeout = function() {
+        
+                  if(idleTimeout) clearTimeout(idleTimeout);
+        
+               
+                idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+            };
+        
+        
+            resetIdleTimeout();
+        
+         
+            ['click', 'touchstart', 'mousemove'].forEach(evt => 
+                document.addEventListener(evt, resetIdleTimeout, false)
+            );
+        
+        })();
+        document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+    </script>
+</head>
+<body style="background-image:url(cec_6.jpg) ;">
+    <header >
+        <div class="row">
+            <div class="col-3" style="padding-top: 10px;">
+                <img src="images\images.png" style="border-radius: 50%;height: 80px; width: auto; float: right;">
+            </div>
+            <div class="col-6 " style="padding-top: 10px;;">
+                <h3 style="text-align: center; color: white;">College Of Engineering Chengannur</h3>
+                <p id="para">Staff Details</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="content" >
+        <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Remya Mohan</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 514</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Saji Kumar T V</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 308</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Sarah Jacob</p>
+                            <p>Associate Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 308</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Shiji T P</p>
+                            <p>Associate Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 414</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Sreekutty S Kumar</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 514</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Sudheer Babu P P</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 406</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Swathy S</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 406</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Sylish S V</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 308</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Varsha P S</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 406</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Vidyamol S</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 406</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Vineeta Vasudevan Nair</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 406</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%; border-radius: 50%; margin-top: 2px;" >
+                            <p>Yasim Khan M</p>
+                            <p>Assistant Professor</p>
+                            <p>Electronics</p>
+                            <p>Room No: 308</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>

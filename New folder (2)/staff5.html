@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="staff.css">
+    <script>
+        (function(){
+        
+            const idleDurationSecs = 15;
+            const redirectUrl = 'staff6.html';
+            let idleTimeout; 
+        
+            const resetIdleTimeout = function() {
+        
+                  if(idleTimeout) clearTimeout(idleTimeout);
+        
+               
+                idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+            };
+        
+        
+            resetIdleTimeout();
+        
+         
+            ['click', 'touchstart', 'mousemove'].forEach(evt => 
+                document.addEventListener(evt, resetIdleTimeout, false)
+            );
+        
+        })();
+        document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+    </script>
+</head>
+<body style="background-image:url(cec_6.jpg) ;">
+    <header >
+        <div class="row">
+            <div class="col-3" style="padding-top: 10px;">
+                <img src="images\images.png" style="border-radius: 50%;height: 80px; width: auto; float: right;">
+            </div>
+            <div class="col-6 " style="padding-top: 10px;;">
+                <h3 style="text-align: center; color: white;">College Of Engineering Chengannur</h3>
+                <p id="para">Staff Details</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="content" >
+        <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Rajeevan A K</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 417</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Raju M</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 417</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Savitha K P</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Sherin Joseph</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Arun A Palavila</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Veena Chandran S</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Prosobh P</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Darsana M Nair</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Monish Mohan</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Soumya S</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%;border-radius: 50%;margin-top: 2px;">
+                            <p>Liya Sara Lalu</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xs-3">
+                        <div class="card">
+                            <img src="images\staffImage.jpg" style="width:40%; border-radius: 50%; margin-top: 2px;" >
+                            <p>Anu Raveendran</p>
+                            <p>Assistant Professor</p>
+                            <p>Electrical Engineering</p>
+                            <p>Room No: 419</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
